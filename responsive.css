@@ -1,0 +1,41 @@
+/* Additional responsive styles for the contact section */
+@media screen and (max-width: 768px) {
+    .contact-wrapper {
+        display: flex !important;
+        flex-direction: column !important;
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+    
+    .contact-info {
+        width: 100% !important;
+    }
+    
+    .contact-form {
+        width: 100% !important;
+    }
+    
+    /* Improve form elements spacing on mobile */
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        font-size: 16px; /* Prevent zoom on iOS */
+    }
+    
+    /* Ensure the submit button is full width on mobile */
+    .submit-btn {
+        width: 100% !important;
+    }
+    
+    /* Better header spacing on mobile */
+    .contact-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .contact-subtitle {
+        font-size: 1.1rem;
+    }
+} 

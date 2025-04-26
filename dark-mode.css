@@ -1,0 +1,245 @@
+:root {
+    --dark-bg: #121212;
+    --dark-text: #e0e0e0;
+    --dark-primary: #bb86fc;
+    --dark-secondary: #03dac6;
+    --dark-tertiary: #cf6679;
+    --dark-card: #1e1e1e;
+    --dark-hover: rgba(187, 134, 252, 0.1);
+    --dark-border: rgba(187, 134, 252, 0.2);
+    --dark-shadow: rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode {
+    background: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+.dark-mode .header {
+    background: rgba(18, 18, 18, 0.95);
+    box-shadow: 0 2px 12px var(--dark-shadow);
+}
+
+.dark-mode .nav-links a,
+.dark-mode .nav-links a.active {
+    color: var(--dark-text);
+    background: none;
+}
+
+.dark-mode .nav-links a:hover,
+.dark-mode .nav-links a.active {
+    color: var(--dark-primary);
+    background: var(--dark-hover);
+}
+
+.dark-mode .nav-links a::after,
+.dark-mode .nav-links a.active::after {
+    background: var(--dark-primary);
+}
+
+.dark-mode .hero-quote {
+    color: var(--dark-primary);
+    text-shadow: 0 2px 8px var(--dark-shadow);
+}
+
+.dark-mode .hero-btn {
+    background: rgba(187, 134, 252, 0.1);
+    color: var(--dark-primary);
+    border: 1px solid var(--dark-primary);
+}
+
+.dark-mode .hero-btn:hover {
+    background: var(--dark-primary);
+    color: var(--dark-bg);
+}
+
+.dark-mode .project-card {
+    background: var(--dark-card);
+    color: var(--dark-text);
+    box-shadow: 0 4px 20px var(--dark-shadow);
+    border: 1px solid var(--dark-border);
+    transition: all 0.3s ease;
+}
+
+.dark-mode .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px var(--dark-shadow);
+    border-color: var(--dark-primary);
+}
+
+.dark-mode .project-link {
+    background: var(--dark-card);
+    color: var(--dark-primary);
+}
+
+.dark-mode .project-link:hover {
+    background: var(--dark-primary);
+    color: var(--dark-bg);
+}
+
+.dark-mode .project-content h3 {
+    color: var(--dark-primary);
+}
+
+.dark-mode .card {
+    background: var(--dark-card);
+    color: var(--dark-text);
+    box-shadow: 0 4px 20px var(--dark-shadow);
+    border: 1px solid var(--dark-border);
+}
+
+.dark-mode .contact-wrapper {
+    background: var(--dark-card);
+    color: var(--dark-text);
+    box-shadow: 0 4px 20px var(--dark-shadow);
+    border: 1px solid var(--dark-border);
+}
+
+.dark-mode .section-title {
+    color: var(--dark-primary);
+}
+
+.dark-mode .footer {
+    background: var(--dark-bg);
+    color: var(--dark-tertiary);
+}
+
+.dark-mode .contact-header h1 {
+    color: var(--dark-primary);
+}
+
+.dark-mode .contact-info {
+    background: linear-gradient(135deg, var(--dark-card), var(--dark-bg));
+    color: var(--dark-text);
+}
+
+.dark-mode .about-page {
+    background: linear-gradient(135deg, rgba(18, 18, 18, 0.95), rgba(187, 134, 252, 0.1));
+}
+
+.dark-mode .bio-section {
+    background: var(--dark-card);
+    color: var(--dark-text);
+    box-shadow: 0 4px 20px var(--dark-shadow);
+    border: 1px solid var(--dark-border);
+}
+
+.dark-mode .bio-section h2 {
+    color: var(--dark-primary);
+}
+
+.dark-mode .achievement-item {
+    background: var(--dark-card);
+    color: var(--dark-text);
+    box-shadow: 0 4px 20px var(--dark-shadow);
+    border: 1px solid var(--dark-border);
+}
+
+.dark-mode .achievement-item:hover {
+    background: var(--dark-card);
+    color: var(--dark-text);
+    box-shadow: 0 8px 20px var(--dark-shadow);
+    border-color: var(--dark-primary);
+}
+
+.dark-mode .achievement-item::after {
+    background: var(--dark-primary);
+}
+
+.dark-mode .achievement-icon {
+    background-color: var(--dark-card);
+}
+
+.dark-mode .achievement-content h3 {
+    color: var(--dark-text);
+}
+
+.dark-mode .skills-list li,
+.dark-mode .certifications-list li,
+.dark-mode .achievements-list li,
+.dark-mode .workshops-list li,
+.dark-mode .interests-list li {
+    background: var(--dark-card);
+    color: var(--dark-text);
+    box-shadow: 0 4px 20px var(--dark-shadow);
+    border: 1px solid var(--dark-border);
+}
+
+.dark-mode .skills-list li:hover,
+.dark-mode .certifications-list li:hover,
+.dark-mode .achievements-list li:hover,
+.dark-mode .workshops-list li:hover,
+.dark-mode .interests-list li:hover {
+    background: var(--dark-card);
+    color: var(--dark-text);
+    box-shadow: 0 4px 20px var(--dark-shadow);
+    border-color: var(--dark-primary);
+}
+
+.dark-mode .skills-list i,
+.dark-mode .interests-list i {
+    color: var(--dark-primary);
+}
+
+.dark-mode .skills-list li:hover i,
+.dark-mode .interests-list li:hover i {
+    color: var(--dark-primary);
+}
+
+.dark-mode .home-nav-links a:hover {
+    color: var(--dark-primary);
+}
+
+.dark-mode .download-resume-btn {
+    background: linear-gradient(90deg, var(--dark-card), var(--dark-bg));
+    color: var(--dark-primary);
+    border: 2px solid var(--dark-primary);
+}
+
+.dark-mode .download-resume-btn:hover {
+    background: var(--dark-primary);
+    color: var(--dark-bg);
+}
+
+/* Form elements in dark mode */
+.dark-mode input,
+.dark-mode textarea {
+    background: var(--dark-card);
+    color: var(--dark-text);
+    border: 1px solid var(--dark-border);
+}
+
+.dark-mode input:focus,
+.dark-mode textarea:focus {
+    border-color: var(--dark-primary);
+    box-shadow: 0 0 0 2px rgba(187, 134, 252, 0.1);
+}
+
+.dark-mode .submit-btn {
+    background: var(--dark-primary);
+    color: var(--dark-bg);
+}
+
+.dark-mode .submit-btn:hover {
+    background: var(--dark-secondary);
+    color: var(--dark-bg);
+}
+
+/* Modal styles in dark mode */
+.dark-mode .modal {
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.dark-mode .modal-content {
+    background: var(--dark-card);
+    color: var(--dark-text);
+    border: 1px solid var(--dark-border);
+}
+
+.dark-mode .close-modal {
+    color: var(--dark-text);
+}
+
+.dark-mode .close-modal:hover {
+    color: var(--dark-primary);
+} 

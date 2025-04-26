@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>About - Yashkumar Chaniyara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark-mode.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="mobile-nav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <a href="index.html" class="logo">YC</a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="dark-mode-toggle" style="background:none;border:none;cursor:pointer;font-size:1.2rem;margin-left:1.2rem;vertical-align:middle;" aria-label="Toggle dark mode">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-page" style="padding-top: 4.5rem;">
+        <div class="container">
+            <h1 class="section-title">About Me</h1>
+            <div style="text-align:center;">
+                <a href="resume/yash%20chaniyara%20resume.pdf" class="download-resume-btn" download>Download Resume</a>
+            </div>
+            
+            <div class="about-content">
+                <div class="bio">
+                    <div class="bio-section">
+                        <h2><i class="fas fa-user"></i> Professional Summary</h2>
+                        <p>Computer Engineering student with a solid foundation in cloud technologies, programming, and problem-solving. Skilled in Python and AWS, with hands-on academic project experience. Strong communicator, collaborative team player, and quick learner seeking opportunities to grow and contribute.</p>
+                    </div>
+
+                    <div class="bio-section">
+                        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                        <div class="education-item">
+                            <h3>B.E. in Computer Engineering</h3>
+                            <p>L.D.R.P. ITR, Gandhinagar | Aug 2022 - 26</p>
+                        </div>
+                        <div class="education-item">
+                            <h3>HSC (XII), GSHSEB</h3>
+                            <p>Dream International School, Dhoraji | 2022 – 46%</p>
+                        </div>
+                        <div class="education-item">
+                            <h3>SSC (X), GSHSEB</h3>
+                            <p>Adarsh School, Dhoraji | 2020 – 75.5%</p>
+                        </div>
+                    </div>
+
+                    <div class="bio-section">
+                        <h2><i class="fas fa-code"></i> Technical Skills</h2>
+                        <div class="skills">
+                            <span>AWS</span>
+                            <span>Python</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Prompt Engineering</span>
+                        </div>
+                    </div>
+
+                    <div class="bio-section">
+                        <h2><i class="fas fa-comments"></i> Soft Skills</h2>
+                        <ul class="skills-list">
+                            <li><i class="fas fa-users"></i>Leadership</li>
+                            <li><i class="fas fa-lightbulb"></i>Problem Solving</li>
+                            <li><i class="fas fa-handshake"></i>Team Collaboration</li>
+                            <li><i class="fas fa-comments"></i>Communication</li>
+                            <li><i class="fas fa-paint-brush"></i>Creativity</li>
+                        </ul>
+                    </div>
+
+                    <div class="bio-section">
+                        <h2><i class="fas fa-certificate"></i> Certifications</h2>
+                        <ul class="certifications-list">
+                            <li class="certificate-item" onclick="openPythonCertificate()">
+                                <span>Python for Data Science – NPETL</span>
+                                <i class="fas fa-file-pdf"></i>
+                            </li>
+                            <li class="certificate-item" onclick="openProjectManagementCertificate()">
+                                <span>Project Management Foundations – LinkedIn Learning</span>
+                                <i class="fas fa-certificate"></i>
+                            </li>
+                            <li class="certificate-item" onclick="openWebDevCertificate()">
+                                <span>Web Development CSS3 and HTML5 – Coincent / IIT Roorkee</span>
+                                <i class="fas fa-file-image"></i>
+                            </li>
+                            <li class="certificate-item" onclick="openAwsCertificate()">
+                                <span>AWS Cloud Practitioner – Skill Builder</span>
+                                <i class="fas fa-certificate"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bio-section achievements-section">
+                        <h2><i class="fas fa-trophy"></i> Achievements</h2>
+                        <div class="achievements-list">
+                            <div class="achievement-item" onclick="showIdeathonCertificateImage()">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="achievement-content">
+                                    <h3>IDEATHON SERIES-2025</h3>
+                                    <p class="achievement-meta">LDRP IDEE-PIE CLUB | January 7, 2025</p>
+                                    <p class="achievement-project">Project: SPARKIT - Department of Information & Technology, LDRP-ITR, Gandhinagar</p>
+                                    <p style="margin-top: 8px; font-size: 0.9em; color: var(--primary-color);"><i class="fas fa-certificate"></i> Click to view certificate</p>
+                                </div>
+                            </div>
+
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="achievement-content">
+                                    <h3>AI Tools Exploration</h3>
+                                    <p class="achievement-meta">Self-directed Learning | 2024</p>
+                                    <p class="achievement-project">Mastered various AI tools including OpenAI, GAMA, perplexity, Windsurf, Trae and Cursor for innovative project development</p>
+                                    <p style="margin-top: 8px; font-size: 0.9em; color: var(--primary-color);"><i class="fas fa-star"></i> Applied in multiple projects</p>
+                                </div>
+                            </div>
+
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="achievement-content">
+                                    <h3>❖ Event Organizer – Crypto Rush, Xenesis '23</h3>
+                                    <p class="achievement-meta">Xenesis '23</p>
+                                    <p class="achievement-project">Successfully organized Crypto Rush event, demonstrating leadership and event management skills</p>
+                                    <p style="margin-top: 8px; font-size: 0.9em; color: var(--primary-color);"><i class="fas fa-trophy"></i> Top Organizing Team</p>
+                                </div>
+                            </div>
+
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-chess"></i>
+                                </div>
+                                <div class="achievement-content">
+                                    <h3>❖ Volunteer – Chess Unlock 32, Xenesis '23</h3>
+                                    <p class="achievement-meta">Xenesis '23</p>
+                                    <p class="achievement-project">Served as a volunteer, contributing to the successful execution of the chess tournament</p>
+                                    <p style="margin-top: 8px; font-size: 0.9em; color: var(--primary-color);"><i class="fas fa-award"></i> Recognition of Service</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bio-section">
+                        <h2><i class="fas fa-chalkboard-teacher"></i> Workshops & Industry Visits</h2>
+                        <ul class="workshops-list">
+                            <li>Career Pathway Guidance – M. M. Patel Students Research Project Cell</li>
+                            <li>"Innovating the Future: AI through Software Engineering" - Mr. Om Talsania</li>
+                            <li class="certificate-item" onclick="openLaravelCertificate()">
+                                <span>Laravel Framework & WordPress Development LDRP-ITR</span>
+                                <i class="fas fa-certificate"></i>
+                            </li>
+                            <li>Industry Visits: Monarch Innovation Pvt. Ltd., Odoo HQ</li>
+                            <li>Vejalpur Startup Festival 2025</li>
+                        </ul>
+                    </div>
+
+                    <div class="bio-section">
+                        <h2><i class="fas fa-heart"></i> Hobbies</h2>
+                        <ul class="interests-list">
+                            <li><i class="fas fa-gamepad"></i>Games</li>
+                            <li><i class="fas fa-music"></i>Music</li>
+                            <li><i class="fas fa-plane"></i>Travelling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="certificateModal">
+        <div class="modal-content certificate-modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 style="margin-bottom: 15px; color: var(--primary-color);">IDEATHON Participation Certificate</h3>
+            <div class="certificate-frame">
+                <iframe src="cirty/Chaniyara_Dec_2022_participation_34674.pdf#view=FitH" class="modal-certificate" style="width: 100%; height: 70vh; border: none; display: block; margin: 0 auto; background-color: #fff;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Yashkumar Chaniyara. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Certificate modal functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('certificateModal');
+            const certificateCard = document.querySelector('.achievement-card.certificate-card');
+            const closeModal = document.querySelector('.close-modal');
+            
+            if (certificateCard) {
+                certificateCard.addEventListener('click', function() {
+                    modal.style.display = 'flex';
+                });
+            }
+            
+            if (closeModal) {
+                closeModal.addEventListener('click', function() {
+                    modal.style.display = 'none';
+                });
+            }
+            
+            window.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+
+        function openIdeathonCertificate() {
+            const modal = document.createElement('div');
+            modal.className = 'modal';
+            modal.style.display = 'flex';
+            modal.innerHTML = `
+                <div class="modal-content certificate-modal-content" style="max-width: 90%; width: 800px;">
+                    <span class="close-modal" onclick="this.parentElement.parentElement.remove()">&times;</span>
+                    <h3 style="margin-bottom: 15px; color: var(--primary-color);">IDEATHON Participation Certificate</h3>
+                    <div class="certificate-frame" style="max-height: 80vh; overflow: hidden;">
+                        <iframe class="modal-certificate" src="cirty/Chaniyara_Dec_2022_participation_34674.pdf#view=FitH&toolbar=1&navpanes=0" style="width: 100%; height: 75vh; border: none; display: block; margin: 0 auto; background-color: #fff;"></iframe>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        function openPythonCertificate() {
+            const modal = document.createElement('div');
+            modal.className = 'modal';
+            modal.style.display = 'flex';
+            modal.innerHTML = `
+                <div class="modal-content certificate-modal-content" style="max-width: 90%; width: 800px;">
+                    <span class="close-modal" onclick="this.parentElement.parentElement.remove()">&times;</span>
+                    <h3 style="margin-bottom: 15px; color: var(--primary-color);">Python for Data Science – NPTEL Certificate</h3>
+                    <div class="certificate-frame" style="max-height: 80vh; overflow: hidden;">
+                        <iframe class="modal-certificate" src="cirty/Python for Data Science.pdf#view=FitH&toolbar=1&navpanes=0" style="width: 100%; height: 75vh; border: none; display: block; margin: 0 auto; background-color: #fff;"></iframe>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        function showIdeathonCertificateImage() {
+            const modal = document.createElement('div');
+            modal.className = 'modal';
+            modal.style.display = 'flex';
+            modal.innerHTML = `
+                <div class="modal-content certificate-modal-content">
+                    <span class="close-modal" onclick="this.parentElement.parentElement.remove()">&times;</span>
+                    <h3 style="margin-bottom: 15px; color: var(--primary-color);">IDEATHON SERIES-2025 Certificate</h3>
+                    <div class="certificate-frame">
+                        <img class="modal-certificate" src="cirty/Yeshkumar N. Chaniyara.png" alt="Ideathon Certificate" style="width: auto; height: auto; max-width: 100%; max-height: 70vh; display: block; margin: 0 auto; object-fit: contain;">
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        function openProjectManagementCertificate() {
+            const modal = document.createElement('div');
+            modal.className = 'modal';
+            modal.style.display = 'flex';
+            modal.innerHTML = `
+                <div class="modal-content certificate-modal-content">
+                    <span class="close-modal" onclick="this.parentElement.parentElement.remove()">&times;</span>
+                    <h3 style="margin-bottom: 15px; color: var(--primary-color);">Project Management Certificate</h3>
+                    <div style="text-align: center; padding: 30px; color: #666; border: 1px dashed #ccc; border-radius: 8px; background-color: #f9f9f9; width: 100%;">
+                        <i class="fas fa-certificate" style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 15px;"></i>
+                        <p>Certificate will be displayed once uploaded</p>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        function openWebDevCertificate() {
+            const modal = document.createElement('div');
+            modal.className = 'modal';
+            modal.style.display = 'flex';
+            modal.innerHTML = `
+                <div class="modal-content certificate-modal-content" style="max-width: 90%; width: 800px;">
+                    <span class="close-modal" onclick="this.parentElement.parentElement.remove()">&times;</span>
+                    <h3 style="margin-bottom: 15px; color: var(--primary-color);">Web Development CSS3 and HTML5 Certificate</h3>
+                    <div class="certificate-frame" style="max-height: 80vh; overflow: hidden;">
+                        <iframe class="modal-certificate" src="cirty/Chaniyara_Dec_2022_participation_34674.pdf#view=FitH&toolbar=1&navpanes=1" style="width: 100%; height: 75vh; border: none; display: block; margin: 0 auto; background-color: #fff;"></iframe>
+                    </div>
+                    <div class="pdf-controls" style="display: flex; justify-content: center; margin-top: 15px; gap: 10px;">
+                        <button onclick="document.querySelector('.modal-certificate').contentWindow.document.body.style.zoom = '0.8'" style="padding: 8px 15px; border-radius: 4px; background: #f0f0f0; border: 1px solid #ccc; cursor: pointer;"><i class="fas fa-search-minus"></i></button>
+                        <button onclick="document.querySelector('.modal-certificate').contentWindow.document.body.style.zoom = '1'" style="padding: 8px 15px; border-radius: 4px; background: #f0f0f0; border: 1px solid #ccc; cursor: pointer;"><i class="fas fa-sync-alt"></i></button>
+                        <button onclick="document.querySelector('.modal-certificate').contentWindow.document.body.style.zoom = '1.2'" style="padding: 8px 15px; border-radius: 4px; background: #f0f0f0; border: 1px solid #ccc; cursor: pointer;"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        function openAwsCertificate() {
+            const modal = document.createElement('div');
+            modal.className = 'modal';
+            modal.style.display = 'flex';
+            modal.innerHTML = `
+                <div class="modal-content certificate-modal-content">
+                    <span class="close-modal" onclick="this.parentElement.parentElement.remove()">&times;</span>
+                    <h3 style="margin-bottom: 15px; color: var(--primary-color);">AWS Cloud Practitioner Certificate</h3>
+                    <div style="text-align: center; padding: 30px; color: #666; border: 1px dashed #ccc; border-radius: 8px; background-color: #f9f9f9; width: 100%;">
+                        <i class="fas fa-cloud" style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 15px;"></i>
+                        <p>Certificate will be displayed once completed</p>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        function openLaravelCertificate() {
+            const modal = document.createElement('div');
+            modal.className = 'modal';
+            modal.style.display = 'flex';
+            modal.innerHTML = `
+                <div class="modal-content certificate-modal-content">
+                    <span class="close-modal" onclick="this.parentElement.parentElement.remove()">&times;</span>
+                    <h3 style="margin-bottom: 15px; color: var(--primary-color);">Laravel Framework & WordPress Development LDRP-ITR Certificate</h3>
+                    <div class="certificate-frame">
+                        <img class="modal-certificate" src="cirty/Laravel Framework and WordPress.JPG" alt="Laravel Certificate" style="width: auto; height: auto; max-width: 100%; max-height: 70vh; display: block; margin: 0 auto; object-fit: contain; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" onload="this.style.opacity='1'" onerror="this.onerror=null;this.src='assets/img/certificate-placeholder.jpg';">
+                        <div class="loading-indicator" style="display: flex; justify-content: center; align-items: center; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,0.8); transition: opacity 0.3s ease;">
+                            <div style="width: 40px; height: 40px; border: 4px solid #f3f3f3; border-top: 4px solid var(--primary-color); border-radius: 50%; animation: spin 1s linear infinite;"></div>
+                        </div>
+                    </div>
+                    <style>
+                        @keyframes spin {
+                            0% { transform: rotate(0deg); }
+                            100% { transform: rotate(360deg); }
+                        }
+                        .certificate-frame {
+                            position: relative;
+                        }
+                        .modal-certificate {
+                            opacity: 0;
+                            transition: opacity 0.5s ease;
+                        }
+                        .modal-certificate[src] {
+                            opacity: 1;
+                        }
+                        .modal-certificate:not([src]) + .loading-indicator,
+                        .modal-certificate[src] + .loading-indicator {
+                            opacity: 0;
+                            pointer-events: none;
+                        }
+                    </style>
+                </div>
+            `;
+            document.body.appendChild(modal);
+            
+            // Set up event listeners
+            const img = modal.querySelector('.modal-certificate');
+            const loadingIndicator = modal.querySelector('.loading-indicator');
+            
+            img.onload = function() {
+                loadingIndicator.style.display = 'none';
+                img.style.opacity = '1';
+            };
+            
+            // Add keyboard event for closing modal with Escape key
+            const escKeyHandler = function(e) {
+                if (e.key === 'Escape') {
+                    modal.remove();
+                    document.removeEventListener('keydown', escKeyHandler);
+                }
+            };
+            document.addEventListener('keydown', escKeyHandler);
+        }
+
+        // Close modal when clicking outside
+        document.addEventListener('click', (e) => {
+            if (e.target.className === 'modal') {
+                e.target.remove();
+            }
+        });
+
+        // Dark mode toggle
+        const toggleBtn = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+        
+        // Check for saved dark mode preference
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            body.classList.add('dark-mode');
+            toggleBtn.textContent = '☀️';
+        }
+        
+        toggleBtn.addEventListener('click', function() {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+                toggleBtn.textContent = '☀️';
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+                toggleBtn.textContent = '🌙';
+            }
+        });
+    </script>
+    <script src="mobile-nav.js"></script>
+    <script src="mobile-menu-fix.js"></script>
+</body>
+</html>
