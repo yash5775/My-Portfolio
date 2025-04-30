@@ -186,6 +186,10 @@
         </div>
     </footer>
 
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script>
         // Header scroll effect
         window.addEventListener('scroll', () => {
@@ -246,6 +250,25 @@
                 }
             });
         }
+
+        // Back to top button visibility and functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Back to top script loaded');
+            window.addEventListener('scroll', () => {
+                const backToTop = document.querySelector('.back-to-top');
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('show');
+                } else {
+                    backToTop.classList.remove('show');
+                }
+            });
+            document.querySelector('.back-to-top').addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
     </script>
     <script src="mobile-nav.js"></script>
     <script src="mobile-menu-fix.js"></script>
