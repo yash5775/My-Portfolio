@@ -1063,6 +1063,58 @@ nav {
     transform: translateY(-2px);
 }
 
+/* Special styling for GitHub item */
+.info-item .fa-github + .info-content a {
+    position: relative;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: var(--transition);
+    padding: 5px 0;
+}
+
+.info-item .fa-github + .info-content a::before {
+    content: 'View GitHub Profile';
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    color: var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.info-item .fa-github + .info-content a::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.info-item .fa-github + .info-content a:hover::before,
+.info-item .fa-github + .info-content a:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.info-item .fa-github + .info-content a:hover {
+    color: white;
+    transform: translateY(-2px);
+}
+
 /* Email link hover effect */
 .info-item .fa-envelope + .info-content a {
     position: relative;
