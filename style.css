@@ -1060,7 +1060,6 @@ nav {
 
 .info-item .fa-linkedin + .info-content a:hover {
     color: white;
-    transform: translateY(-2px);
 }
 
 /* Special styling for GitHub item */
@@ -1112,7 +1111,6 @@ nav {
 
 .info-item .fa-github + .info-content a:hover {
     color: white;
-    transform: translateY(-2px);
 }
 
 /* Email link hover effect */
